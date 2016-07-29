@@ -30,12 +30,34 @@ namespace COMP123_S2016_W11_database
             //copy data into student object from form TExt Boxes
             //Student newStudent = new Student();
 
+            //check if the form tye is Details , Edit or Delete
+            //if(this.FormType>3)
+            //{
+            //newStudent = (from student in db.Students
+                           //where student.StudentID == this.StudentID
+                          // select student).FirstOrDefault();
+            //}
+
             //newStudent.FirstName = FirstNameTextBox.Text;
             //newStudent.LastName = LastNameTextBox.Text;
             //newStudent.StudentNumber = StudentNumberTextBox.Text
 
-            //Insert the new Student Object into the SQL Database
-            //db.GetTable<Student>().InsertOnSubmit(newStudent);
+            //check if FOrkm Type is "Add Student"
+            //if(this.FormType < 4)
+            //{
+            // //Insert the new Student Obkrct int the SQL
+            // db.GetType<Student>().InsertOnSubmit(newStudent);
+            //}
+
+
+           //if(this.FormType==(int)ColumnButton.Delete)
+           // {
+            //Dialog Result = Messagebox.Show("Are yu sure?","COnfirm Deletion", MEssaeboxButton);
+            //if(resutlt== DailogResult.Ok)
+          //  {
+//               db.GetTable<Student>().DeleteOnSubmit(newStudent);
+          //  }
+            //}
 
             //save changes 
             //db.SubmitChanges();
