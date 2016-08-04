@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="COMP123_S2016_W11_database.StudentListForm">
+    <Position X="7.5" Y="0.5" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACABAAAgRACIAAQCgAEAEAACIABEADAAQAA=</HashCode>
+      <FileName>StudentListForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="COMP123_S2016_W11_database.StudentDetailsForm">
+    <Position X="1.25" Y="0.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AIABACAAASAAAABAAgCAAAACAKAIAAAAAGAARAACAAA=</HashCode>
+      <FileName>StudentDetailsForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="COMP123_S2016_W11_database.ColumsButton">
+    <Position X="5.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAAAAAEAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>ColumsButton.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Meiryo" Size="9" />
+</ClassDiagram>

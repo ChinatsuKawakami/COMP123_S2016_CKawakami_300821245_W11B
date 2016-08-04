@@ -1,6 +1,6 @@
 ﻿namespace COMP123_S2016_W11_database
 {
-    partial class AddStudentForm
+    partial class StudentDetailsForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.SubmitButton = new System.Windows.Forms.Button();
             this.NewStudentlabel = new System.Windows.Forms.Label();
             this.Firstlabel = new System.Windows.Forms.Label();
             this.FirstNametextBox = new System.Windows.Forms.TextBox();
@@ -39,19 +39,19 @@
             this.CancelButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // SubmitButton
             // 
-            this.button1.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button1.Font = new System.Drawing.Font("Lucida Bright", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(96, 360);
-            this.button1.Margin = new System.Windows.Forms.Padding(8);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(151, 45);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Submit";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.SubmitButton.BackColor = System.Drawing.Color.RoyalBlue;
+            this.SubmitButton.Font = new System.Drawing.Font("Lucida Bright", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SubmitButton.ForeColor = System.Drawing.Color.White;
+            this.SubmitButton.Location = new System.Drawing.Point(96, 360);
+            this.SubmitButton.Margin = new System.Windows.Forms.Padding(8);
+            this.SubmitButton.Name = "SubmitButton";
+            this.SubmitButton.Size = new System.Drawing.Size(151, 45);
+            this.SubmitButton.TabIndex = 0;
+            this.SubmitButton.Text = "Submit";
+            this.SubmitButton.UseVisualStyleBackColor = false;
+            this.SubmitButton.Click += new System.EventHandler(this.SubmitButton_Click);
             // 
             // NewStudentlabel
             // 
@@ -131,9 +131,9 @@
             this.CancelButton.TabIndex = 9;
             this.CancelButton.Text = "Cancel";
             this.CancelButton.UseVisualStyleBackColor = true;
-            this.CancelButton.Click += new System.EventHandler(this.button2_Click);
+            this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
             // 
-            // AddStudentForm
+            // StudentDetailsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -146,10 +146,10 @@
             this.Controls.Add(this.FirstNametextBox);
             this.Controls.Add(this.Firstlabel);
             this.Controls.Add(this.NewStudentlabel);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.SubmitButton);
             this.Font = new System.Drawing.Font("Lucida Bright", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(8);
-            this.Name = "AddStudentForm";
+            this.Name = "StudentDetailsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Students";
             this.Load += new System.EventHandler(this.AddStudentForm_Load);
@@ -160,7 +160,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button SubmitButton;
         private System.Windows.Forms.Label NewStudentlabel;
         private System.Windows.Forms.Label Firstlabel;
         private System.Windows.Forms.TextBox FirstNametextBox;

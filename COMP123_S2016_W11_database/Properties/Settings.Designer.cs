@@ -33,5 +33,16 @@ namespace COMP123_S2016_W11_database.Properties {
                 return ((string)(this["COMP123ConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(localdb)\\ProjectsV12;Initial Catalog=COMP123;Integrated Security=Tru" +
+            "e;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True")]
+        public string COMP123ConnectionString1 {
+            get {
+                return ((string)(this["COMP123ConnectionString1"]));
+            }
+        }
     }
 }

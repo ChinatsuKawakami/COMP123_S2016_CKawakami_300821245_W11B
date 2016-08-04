@@ -45,13 +45,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddStudentForm.cs">
+    <Compile Include="StudentDetailsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddStudentForm.Designer.cs">
-      <DependentUpon>AddStudentForm.cs</DependentUpon>
+    <Compile Include="StudentDetailsForm.Designer.cs">
+      <DependentUpon>StudentDetailsForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="columsButton.cs" />
+    <Compile Include="ColumsButton.cs" />
     <Compile Include="COMP123DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -70,9 +70,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AddStudentForm.resx">
-      <DependentUpon>AddStudentForm.cs</DependentUpon>
+    <EmbeddedResource Include="StudentDetailsForm.resx">
+      <DependentUpon>StudentDetailsForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ClassDiagram.cd" />
     <None Include="Student.dbml.layout">
       <DependentUpon>Student.dbml</DependentUpon>
     </None>

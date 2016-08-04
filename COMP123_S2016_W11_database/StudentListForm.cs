@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace COMP123_S2016_W11_database
 {
@@ -19,22 +20,21 @@ namespace COMP123_S2016_W11_database
 
         private void StudentListForm_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'cOMP123DataSet.Students' table. You can move, or remove it, as needed.
-          //  this.studentsTableAdapter.Fill(this.cOMP123DataSet.Students);
+           
 
         }
 
         private void StudentDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             // Create the new studentDetailsForm
-           //StudentDetailsForm StudentDetailsForm = new StudentDetailsForm();
-           //StudentDetails.StudentListForm = this;
-           //StudentDetails.FromType = e.columnIndex; //send over the button that is clicked
+           StudentDetailsForm StudentDetails = new StudentDetailsForm();
+           StudentDetails.studentListForm = this;//make a reference to this form
+           StudentDetails.FormType = e.ColumnIndex; //send over the button that is clicked
 
             //get the student id from the studentsDataGridView
 
-           //StudentDetails.StudentID = Convert.ToInt32(StudentsDataGridView.Rows[e.RowIndex].Cells["StudentID"].Value);
-            //Debug.WriteLine(StudentDetails.StudentID);
+           StudentDetails.StudentID = Convert.ToInt32(StudentDataGridView.Rows[e.RowIndex].Cells["StudentsId"].Value);
+            Debug.WriteLine(StudentDetails.StudentID);
 
             //StudentDetails.Show(); // show the studenDerils FOrm
             //this.Hide();//Hide this FOrm
@@ -42,7 +42,7 @@ namespace COMP123_S2016_W11_database
 
         private void AddStudentButton_Click(object sender, EventArgs e)
         {
-            AddStudentForm addStudentForm = new AddStudentForm();
+            StudentDetailsForm addStudentForm = new StudentDetailsForm();
             addStudentForm.studentListForm = this;
             addStudentForm.Show();
             this.Hide();
@@ -50,7 +50,10 @@ namespace COMP123_S2016_W11_database
 
         private void StudentListForm_Activated(object sender, EventArgs e)
         {
-            //this.studentTableAdapter.Fill(this.COMP123.)
+           
+
+            // TODO: This line of code loads data into the 'cOMP123DataSet.Students' table. You can move, or remove it, as needed.
+            this.studentsTableAdapter.Fill(this.cOMP123DataSet.Students);
         }
     }
 }
