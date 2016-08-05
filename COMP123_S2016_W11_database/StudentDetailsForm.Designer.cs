@@ -82,6 +82,7 @@
             this.FirstNametextBox.Name = "FirstNametextBox";
             this.FirstNametextBox.Size = new System.Drawing.Size(378, 39);
             this.FirstNametextBox.TabIndex = 3;
+            this.FirstNametextBox.TextChanged += new System.EventHandler(this.FormTextBox_TextChanged);
             // 
             // LastNametextBox
             // 
@@ -90,6 +91,7 @@
             this.LastNametextBox.Name = "LastNametextBox";
             this.LastNametextBox.Size = new System.Drawing.Size(384, 39);
             this.LastNametextBox.TabIndex = 4;
+            this.LastNametextBox.TextChanged += new System.EventHandler(this.FormTextBox_TextChanged);
             // 
             // StudentNumbertextBox
             // 
@@ -98,6 +100,7 @@
             this.StudentNumbertextBox.Name = "StudentNumbertextBox";
             this.StudentNumbertextBox.Size = new System.Drawing.Size(384, 39);
             this.StudentNumbertextBox.TabIndex = 8;
+            this.StudentNumbertextBox.TextChanged += new System.EventHandler(this.FormTextBox_TextChanged);
             // 
             // LastNamelabel
             // 
@@ -152,6 +155,7 @@
             this.Name = "StudentDetailsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Students";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.StudentDetailsForm_FormClosing);
             this.Load += new System.EventHandler(this.AddStudentForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
